@@ -160,23 +160,23 @@ class _EditMatchScreenState extends State<EditMatchScreen> {
           const SizedBox(height: 28),
 
           // ── Home team ────────────────────────────────────
-          _Label(icon: '🏠', text: 'Equipo Local'),
+          _Label(icon: '1️⃣', text: 'Equipo 1'),
           const SizedBox(height: 10),
           _TeamDropdown(
             value: _homeTeam,
             countries: countries,
-            hint: 'Seleccionar equipo local',
+            hint: 'Seleccionar equipo 1',
             onChanged: (c) => setState(() => _homeTeam = c),
           ),
 
           const SizedBox(height: 20),
 
-          _Label(icon: '✈️', text: 'Equipo Visitante'),
+          _Label(icon: '2️⃣', text: 'Equipo 2'),
           const SizedBox(height: 10),
           _TeamDropdown(
             value: _awayTeam,
             countries: countries,
-            hint: 'Seleccionar equipo visitante',
+            hint: 'Seleccionar equipo 2',
             onChanged: (c) => setState(() => _awayTeam = c),
           ),
 
@@ -319,7 +319,7 @@ class _ScoreEditor extends StatelessWidget {
             children: [
               Expanded(
                 child: _ScoreColumn(
-                  label: homeTeam?.displayName ?? 'Local',
+                  label: homeTeam?.displayName ?? '1',
                   score: homeScore,
                   onChanged: onHomeScoreChanged,
                 ),
@@ -337,7 +337,7 @@ class _ScoreEditor extends StatelessWidget {
               ),
               Expanded(
                 child: _ScoreColumn(
-                  label: awayTeam?.displayName ?? 'Visitante',
+                  label: awayTeam?.displayName ?? '2',
                   score: awayScore,
                   onChanged: onAwayScoreChanged,
                 ),
