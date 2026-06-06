@@ -4,7 +4,7 @@ import '../models/models.dart';
 
 class ApiService {
 
-  static const String baseUrl = 'https://worldcupapi.projects.gzgroup.dev/';
+  static const String baseUrl = 'https://worldcupapi.projects.gzgroup.dev';
 
   // ─── Countries ────────────────────────────────────────────
   Future<List<Country>> getCountries() async {
